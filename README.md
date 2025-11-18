@@ -35,7 +35,7 @@ The data ingestion and model training process involves cleaning the dataset, tra
 ### Phase 2: Live Streamlit Application
 The real-time inference logic handles user input, checks the database, performs "Smart Scraping" for missing data, and retrieves recommendations via FAISS.
 
-![Live App Flowchart](docs/432f614c-a6a4-49a6-9028-dbd5847b0ee1.jpeg)
+![Live App Flowchart](docs/89759360-1e62-4df0-9327-6835fee21e02.jpeg)
 
 1.  **User Input:** The system checks if the movie exists in the internal database.
 2.  **Cold Start Handling:** If missing, `Scrap2.py` fetches live data, `Dummies.py` handles alignment, and the pipeline generates a new embedding on the fly.
