@@ -14,8 +14,6 @@ from sentence_transformers import SentenceTransformer
 from sklearn.preprocessing import normalize
 
 
-from dotenv import load_dotenv  
-load_dotenv()
 
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
@@ -29,11 +27,7 @@ import Scrap2
 def load_resources():
     """Loads models, FAISS index, and dataset. Ensures synchronization between CSV and Index."""
     
-    api_key = os.getenv('TMDB_API_KEY')
-    if not api_key:
-        st.error("FATAL ERROR: TMDB_API_KEY not found in .env file")
-        st.stop()    
-    Scrap2.API_KEY = api_key  # Inject the key into the module
+    Scrap2.API_KEY = os.environ.get('API_KEY')
 
     encoder = tf.keras.models.load_model("models/encoder_model_last.keras")
     sbert_model = SentenceTransformer('all-MiniLM-L6-v2')
