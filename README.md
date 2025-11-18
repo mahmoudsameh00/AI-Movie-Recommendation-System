@@ -5,7 +5,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![FAISS](https://img.shields.io/badge/FAISS-Vector_Search-green)
 
-A robust, content-based recommendation engine that leverages a **Hybrid Neural Architecture**. It fuses **Deep Autoencoders** (for tabular metadata) and **SBERT** (for natural language plots) to generate rich feature vectors. These vectors are indexed using **FAISS** for millisecond-level similarity searches, wrapped in a dynamic Streamlit interface.
+A smart movie recommendation engine that doesn't just match keywords, it understands the "vibe" of a movie. By combining hard data (like genres and ratings) with the actual story (the plot), delivering personalized movie suggestions in real-time through a responsive Streamlit interface.
 
 ## 🌟 Key Features
 
