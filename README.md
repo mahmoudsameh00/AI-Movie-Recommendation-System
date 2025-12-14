@@ -100,3 +100,6 @@ cd movie-recommender
 * Python: 3.9
 * Dataset: [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv)
 * API: [TMDB](https://www.themoviedb.org/)
+
+
+https://github.com/user-attachments/assets/38f65db4-bdcd-413e-96dc-44035665918f
